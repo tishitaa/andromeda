@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>endromeda - rss</title>
+  <description>endromeda articles, on rss!</description>
+  <link>https://endromeda.neocities.org/</link>
+  <lastBuildDate>
+    Sat, 22 May 2021
+  </lastBuildDate>
+  <ttl>20000</ttl>
+  <item>
+    <title>Articles are now posts</title>
+    <description>
+      The articles section is now renamed to Posts. This allows me to make blog-like posts along side articles on endromeda.
+    </description>
+    <link>https://endromeda.neocities.org/news/2021/7-12-first_post.html</link>
+    <pubDate>
+      Mon, 12 July 2021 09:58:00 PST
+    </pubDate>
+  </item>
+  <item>
+    <title>A First Look at Windows 11</title>
+    <description>
+      We're going to take a first look on Microsoft's recently leaked Operating System, Windows 11. Which, I took a test drive on a VM. It sucks, ALOT.
+    </description>
+    <link>https://endromeda.neocities.org/2021/6-16-win11.html</link>
+    <pubDate>
+      Wen, 16 June 2021 12:53:00 PST
+    </pubDate>
+  </item>
+  <item>
+    <title>endromeda BETA</title>
+    <description>
+      i have a beta website, where i try out new things and see if they should be on the main website, the beta page is at /beta/.
+    </description>
+    <link>https://endromeda.neocities.org/beta</link>
+    <pubDate>
+      Sat, 12 June 2021 14:04:00 PST
+    </pubDate>
+  </item>
+  <item>
+    <title>DeviantART Sucks</title>
+    <description>
+      The DeviantART redesign is one of the worst redesigns i've ever seen, Even worse than YouTube Polymer, it's a buggy, slow, confusing mess of a redesign.
+    </description>
+    <link>https://endromeda.neocities.org/news/2021/5-26-deviantart.html</link>
+    <pubDate>
+      Wed, 26 May 2021 07:01:00 PST
+    </pubDate>
+  </item>
+  <item>
+    <title>Article Pages Change</title>
+    <description>
+      All existing article pages has been moved and renamed, to be more organized once more articles come.
+    </description>
+    <link>https://endromeda.neocities.org/</link>
+    <pubDate>
+      Sat, 22 May 2021 06:19:00 PST
+    </pubDate>
+  </item>
+  <item>
+    <title>Gnome 3 and KDE 4/5 Sucks</title>
+    <description>
+      Gnome 3 and KDE Plasma is trash, every setup I see with one of them looks so ugly and blinds my eyes. Gnome and KDE had lost their way on making a actual good Desktop enviornment.
+    </description>
+    <link>https://endromeda.neocities.org/news/2021/5-8-kdegnome.html</link>
+    <pubDate>
+      Sat, 8 May 2021
+    </pubDate>
+  </item>
+  <item>
+    <title>The OIC is a drama landfill</title>
+    <description>
+      The OIC (Old Internet Community) is an kindergarden playground and 5 year old kids fighting around, but it's through harrassment and doxxing. OIC is a hellhole powered by toxicity.
+    </description>
+    <link>https://endromeda.neocities.org/news/2021/5-4-oic.html</link>
+    <pubDate>
+      Tue, 4 May 2021
+    </pubDate>
+  </item>
+  <item>
+    <title>Windows 10 is a dumpster</title>
+    <description>
+      Windows 10 is a absolute dumpster in fire. It's a absolute resource hogger, it's spyware and looks terrible, There is some ways to make Windows 10 a bit more tollerable.
+    </description>
+    <link>https://endromeda.neocities.org/news/2021/5-3-win10.html</link>
+    <pubDate>
+      Mon, 3 May 2021
+    </pubDate>
+  </item>
+  <item>
+    <title>Why Firefox Proton is SHIT</title>
+    <description>
+     Somewhere in Febuary 2021, Firefox has put a new Proton redesign in the nightly builds of Firefox. In this article, i'm going to be ranting on why the Firefox Proton redesign is absolute SHIT.
+    </description>
+    <link>https://endromeda.neocities.org/news/2021/5-3-firefox-proton.html</link>
+    <pubDate>
+      Mon, 3 May 2021
+    </pubDate>
+  </item>
+</channel>
+</rss>
