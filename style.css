@@ -138,6 +138,7 @@ a {
 .header {
   height: 88px;
   width: 720px;
+  background-image: url('header.png');
   margin: 12px auto;
   box-shadow: 4px 4px #3C3836;
   border: 4px solid #250E07;
