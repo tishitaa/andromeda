@@ -139,6 +139,7 @@ a {
   height: 88px;
   width: 720px;
   background-image: url('/assets/header.png');
+  background-size: cover;
   margin: 12px auto;
   box-shadow: 4px 4px #3C3836;
   border: 4px solid #250E07;
