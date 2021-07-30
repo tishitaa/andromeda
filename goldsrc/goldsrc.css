@@ -1,0 +1,208 @@
+@font-face {
+	font-family: 'Tahoma';
+	src: url('/assets/tahoma.ttf');
+}
+@font-face {
+    font-family: "Tahoma";
+    src: url("/assets/tahomabd.ttf");
+    font-weight: bold;
+}
+
+* {
+  cursor: url(https://cdn.discordapp.com/attachments/862154953295396884/869335125064818688/Original_Arrow_Windows_95.cur), auto !important;
+}
+
+body {
+font-family: Tahoma;
+font-size: 14px;
+background-image: url('/goldsrc/background.jpg');
+}
+
+button {
+-webkit-appearance: none;
+ -moz-appearance: none;
+appearance: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  text-decoration: none;
+  margin-right: 1px;
+  margin-top: 9px;
+  cursor: url(https://cdn.discordapp.com/attachments/862154953295396884/869335122992832552/Cursor_15.cur), auto !important;
+  padding-right: 20px;
+  background-color: #4C5844;
+  border-top: 1px #8C9284 solid;
+  border-left : 1px #8C9284 solid;
+  border-right : 1px #292C21 solid;
+}
+
+.activetab {
+  color: #C4B550;
+}
+
+.HLBox {
+background-color: #4C5844;
+display: block;
+width : 30px;
+padding: 7px;
+height : 30px;
+margin: auto;
+border-top: 1px #889180 solid;
+border-left : 1px #889180 solid;
+border-right : 1px #282E22 solid;
+border-bottom: 1px #282E22 solid;
+color: #FFF;
+}
+
+.close {
+background-color: #4C5844;
+display: block;
+width : 16px;
+padding: 0px;
+height : 16px;
+float: right;
+
+background-image: url('/goldsrc/close.png');
+background-repeat: no-repeat;
+background-position: 3.5px 3px;
+
+border-top: 1px #889180 solid;
+border-left : 1px #889180 solid;
+border-right : 1px #282E22 solid;
+border-bottom: 1px #282E22 solid;
+color: #FFF;
+}
+
+.close:active {
+	border-top : 1px #282E22 solid;
+	border-left : 1px #282E22 solid;
+	border-right : 1px #889180 solid;
+	border-bottom : 1px #889180 solid;
+	background-position: 4px 4px;
+	color: #FFF;
+}
+
+.HLContent {
+background-color: #4C5844;
+display: block;
+width : 30px;
+padding: 7px;
+height : 30px;
+border-top: 1px #889180 solid;
+border-left : 1px #889180 solid;
+border-right : 1px #282E22 solid;
+border-bottom: 1px #282E22 solid;
+color: #FFF;
+}
+
+.HLContentDark {
+background-color: #394531;
+display: block;
+width : 30px;
+padding: 7px;
+height : 30px;
+margin: auto;
+border-top: 1px #313029 solid;
+border-left : 1px #313029 solid;
+border-right : 1px #8C9284 solid;
+border-bottom: 1px #8C9284 solid;
+color: #FFF;
+}
+
+.HLButton {
+	text-align:left;
+	margin : 0;
+	position : absolute;
+	background-color: #4C5844;
+	display : block;
+	height : 24px;
+	border-top : 1px #889180 solid;
+	border-left : 1px #889180 solid;
+	border-right : 1px #282E22 solid;
+	border-bottom : 1px #282E22 solid;
+	color: #FFF;
+}
+
+.HLButton:active {
+	border-top : 1px #282E22 solid;
+	border-left : 1px #282E22 solid;
+	border-right : 1px #889180 solid;
+	border-bottom : 1px #889180 solid;
+	color: #FFF;
+}
+
+.HLInput {
+	margin : 0;
+	position : absolute;
+	background-color: #3E4637;
+	display : block;
+	width : 30px;
+	height : 22px;
+	padding : 0px;
+	border-top : 1px #282E22 solid;
+	border-left : 1px #282E22 solid;
+	border-right : 1px #889180 solid;
+	border-bottom : 1px #889180 solid;
+	color: #FFF;
+}
+
+.HLText {
+font-family : Tahoma;
+font-size: 14px;
+margin: 0;
+position : relative;
+font-smoothing : never;
+-webkit-font-smoothing : none;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.center {
+text-align: center;
+}
+
+HLText2 {
+font-smoothing : never;
+-webkit-font-smoothing: none;
+}
+
+HLPOS {
+margin: 0;
+position : relative;
+}
+
+.updates {
+color: #A5AA94;
+}
+
+.reset {
+margin: auto;
+border-bottom : 1px #282E22 solid;
+float: center;
+}
+
+.warning {
+font-family: Tahoma;
+font-size: 14px;
+color: #C6B652;
+font-weight: bold;
+text-align: center;
+}
