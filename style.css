@@ -33,6 +33,11 @@ body {
 .page_name {
 	font-size: 28px
 }
+.pfp {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
 .description {
 	font-size: 18px
 }
