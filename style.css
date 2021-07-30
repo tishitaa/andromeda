@@ -39,10 +39,10 @@ body {
 }
 img.pfp {
 	border-radius: 5px;
-	box-shadow:  0 0 10px  rgba(0,0,0,0.6);
-	-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
-	-webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
-	-o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+	box-shadow:  0 0 5px  rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+	-o-box-shadow: 0 0 5px  rgba(0,0,0,0.5);
 }
 .description {
 	font-size: 18px
