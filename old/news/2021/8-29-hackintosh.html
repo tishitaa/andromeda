@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../styles/main.css">
+
+<!-- title and description -->
+<title> Hackintosh Log #1 - endromeda</title>
+
+<!-- structured data -->
+<body> <!-- blackstrip & banner image -->
+    <center>
+        <table class="banner" width="440">
+            <tbody>
+                <tr class="blackstrip" height="20">
+                    <td class="blackstrip">
+                        <a href="../../">Home</a>|<a href="../../about.html">About</a>|<a href="../../contact.html">Contact</a>|<a href="../../posts.html">Posts  </a>
+                    </td>
+            </tbody>
+        </table>
+    <img src="../../images/banner.gif">
+</center>
+
+
+<center> <!-- content/main container -->
+    <table class="hmcontainer" width="440">
+        <tbody>
+    <tr>
+<td class="hmcontainer2"><font size="+1">
+<b>endromeda</b></font><br>
+<b style="font-size:15px;">Hackintosh Log #1</b>
+<hr>
+    <p>
+ Hello, welcome to my first log of my experience doing a Hackintosh. I've been using macOS Mojave for the past 20 days and learned alot about macOS and Hackintosh in general. 
+    </p>
+    <b>A brick wall</b>
+        <p>
+ For awhile i've been wanting to do a Hackintosh on my main system. Though I hit a brick wall, my iGPU is a Intel HD 2500. Which is not supported on macOS. 
+        </p>
+        <table class="hmcontainer" width="100%">
+        <tbody>
+        <tr>
+        <td class="hmcontainer2">
+        <i>"The HD 2500 on the other hand only has partial support in Mojave for quick sync features as hardware acceleration is <b>unsupported</b> so you will need a compatible dGPU for display purposes."</i>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <p>
+         But it didn't stop me from doing a Hackintosh. I bought a used GT 630 from eBay, which is still supported on macOS (surprisingly). Now, I was able to start doing the Hackintosh. 
+        </p>
+    <b>More Problems</b>
+        <p>
+ I was originally going to make a OpenCore EFI Folder. But when the installer of Mojave is finished, there was no option for "macOS Installer", which is needed to actually finish the installation. 
+ </p>
+ <p>
+                        I eventually gave up with it after tinkering and tweaking the EFI Folder to no avail, and used a premade one on <a class="link" href="https://github.com/dps910/Dell-Optiplex-7010-Hackintosh-OpenCore">GitHub<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a>.
+                        Which to my surprise it actually worked, after some time I was on the Setup Assistant. I completed the setup and was glad to see the macOS Mojave wallpaper and desktop.
+                    </p>
+                        <img src="/news/2021/about-my-mac.png" width="420">
+                        <br>
+                        Screenshot of About This Mac.<br>
+    <b>First Thoughts</b>
+                    <p>
+                        After copying the EFI folder to the SSD and done tweaks to it, I started installing programs and tweaking macOS to my liking.
+                    </p><p>
+                        Almost everything works on the Hackintosh, but unfortunately the only thing that doesn't work is my Wi-Fi card. Which is a Qualcomm Athernos AR93xx.
+                        Even after getting help and hair pulling trying to get it to work, I never got it to work. So I had to resort to using ethernet.
+                    </p>
+                        <img src="/news/2021/mojave-desktop.png" width="420">
+                        <br>
+                        Current macOS Mojave setup.<br>
+    <b>Current Issues</b>
+<p>
+Not everything works right now, the current issues are:
+</p>
+                          <ul class="normal">
+                            <li>Some USB Ports don't work</li>
+                            <li>"EFI" entry shows on Boot Picker despite there's nothing but the OC folder</li>
+                            <li>Incompatible Wi-Fi card</li>
+                            <li>Sleeping is iffy</li>
+                            <li>iMessage/FaceTime not working</li>
+                          </ul>
+<p>
+Currently doing my best in fixing these issues, but they aren't really a big issue for me.
+</p>
+    <b>Final Thoughts</b>
+        <p>
+
+                        It has been over 20 days since I started this, Overall this Hackintosh endeavour went pretty smoothly for me. My previous Hackintosh projects were a pita because of sound/graphics issues. I will post a update when
+                        I make a update to my OpenCore EFI or do more tweaks to macOS.
+                    
+        </p>
+</tr>
+</tbody>
+</table>
+<iframe class="footer2" src="../../quote.html" width="100%" height="50px" frameBorder="0">Couldn't load footer.</iframe><br>
+</center>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="/css/steamico.png">
+      <link rel="stylesheet" href="/css/blacksteam.css">
+      <!-- title and description -->
+      <title>Hackintosh Log #1 - Andromeda</title>
+      <!-- structured data -->
+      <main>
+         <script src="/assets/js/header.js"></script>
+         <div class="window no-resize" name="andromeda">
+            <div class="box inset">
+               <h2>Hackintosh Log #1</h2>
+               <h5>August 29, 2021</h5>
+               <h5>Edited: September 29, 2021</h5>
+               <p>
+                  Hello, welcome to my first log of my experience doing a Hackintosh. I've been using macOS Mojave for the past 20 days and learned alot about macOS and Hackintosh in general.
+               </p>
+               <h3>A brick wall</h3>
+               <p>
+                  For awhile i've been wanting to do a Hackintosh on my main system. Though I hit a brick wall, my iGPU is a Intel HD 2500. Which is not supported on macOS.
+               </p>
+               <div class="box rounded">
+                  The HD 2500 on the other hand only has partial support in Mojave for quick sync features as hardware acceleration is <strong>unsupported</strong> so you will need a compatible dGPU for display purposes.
+               </div>
+               <p>
+                  But didn't stop me from doing a Hackintosh. I bought a used GT 630 from eBay, which is still supported on macOS. Now, I was able to start doing the Hackintosh.
+               </p>
+               <h3>More Problems</h3>
+               <p>
+                  I was originally going to make an OpenCore Configuration. But after macOS Mojave finished the installation, there was no option for "macOS Installer", which you'd needed to finish the installation.
+               </p>
+               <p>
+                  I eventually gave up after tinkering and tweaking <code>config.plist</code> and to no avail, and used a premade one on 
+                  <a href="https://github.com/dps910/Dell-Optiplex-7010-Hackintosh-OpenCore">
+                     GitHub
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">
+                           <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path>
+                           <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon>
+                        </svg>
+                     </span>
+                  </a>
+                  .
+                  Which to my surprise it worked, after some time I was on Setup Assistant. I completed the setup and was glad to see the Mojave wallpaper and desktop.
+               </p>
+               <div>
+                  <img src="/news/2021/about-my-mac.png" width="530">
+                  <br>
+                  Screenshot of About This Mac.
+               </div>
+               <h3>First Thoughts</h3>
+               <p>
+                  After copying the EFI folder to my SSD and tweaking OpenCore, I started installing programs and tweaking macOS to my liking.
+               </p>
+               <p>
+                  Almost everything works on the Hackintosh, unfortunately the only thing that didn't work is my Wi-Fi card. Which is an Qualcomm Athernos AR93xx.
+                  Even after getting help and hair-pulling trying to get it to work, I never got it to work. So I had to resort to using Ethernet.
+               </p>
+               <div>
+                  <img src="/news/2021/mojave-desktop.png" width="600">
+                  <br>
+                  Current macOS Mojave setup.
+               </div>
+               <h3>Current Issues</h3>
+               <p>
+                  Currently, not everything works right now. The issues currently are:
+               </p>
+               <ul>
+                  <li>Some USB ports don't work</li>
+                  <li>"EFI" entry shows on Boot Picker despite nothing but the OC folder</li>
+                  <li>Incompatible Wi-Fi card</li>
+                  <li>Sleeping is iffy</li>
+                  <li>iMessage/FaceTime not working</li>
+               </ul>
+               <p>
+                  Currently trying my best on fixing these issues, but aren't really a big issue for me.
+               </p>
+               <h3>Final Thoughts</h3>
+               <p>
+                  It has been over 20 days since I started this, Overall this Hackintosh endeavour went pretty smoothly for me. My previous Hackintosh projects were a pita because of sound/graphics issues. I will post a update when
+                  I make a update to OpenCore or do more tweaking to macOS.
+               </p>
+                  <div class="centered">
+                    <hr>
+                    <button id="comments-button" class="centered" style="font-family:Trebuchet MS">Load Telegram Comments</button>
+                    <script id="comments-script" src="/assets/js/comments.js"></script>
+                    <!-- <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="iXlXhFns" data-limit="5" data-dislikes="1" data-dark="1"></script> -->
+                  </div>
+            </div>
+            <div class="centered">
+               <h4>
+                  Andromeda (c) <script>document.write(new Date().getFullYear())</script>
+               </h4>
+            </div>
+         </div>
+         <div class="window no-resize headless centered">
+            <script src="/assets/js/footer.js"></script>
+         </div>
+      </main>
+</html>
+

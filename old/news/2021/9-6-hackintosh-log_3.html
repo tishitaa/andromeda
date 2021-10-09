@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../styles/main.css">
+
+<!-- title and description -->
+<title> Hackintosh Log #3 - endromeda</title>
+
+<!-- structured data -->
+<body> <!-- blackstrip & banner image -->
+    <center>
+        <table class="banner" width="440">
+            <tbody>
+                <tr class="blackstrip" height="20">
+                    <td class="blackstrip">
+                        <a href="../../">Home</a>|<a href="../../about.html">About</a>|<a href="../../contact.html">Contact</a>|<a href="../../posts.html">Posts  </a>
+                    </td>
+            </tbody>
+        </table>
+    <img src="../../images/banner.gif">
+</center>
+
+
+<center> <!-- content/main container -->
+    <table class="hmcontainer" width="440">
+        <tbody>
+    <tr>
+<td class="hmcontainer2"><font size="+1">
+<b>endromeda</b></font><br>
+<b style="font-size:15px;">Hackintosh Log #3</b>
+<hr>
+                    <p>
+                        I didn't expect for me to make another log so quickly, but a fair bit more advanced made on my Hackintosh.
+                    </p>
+    <b>Updating OpenCore</b>
+
+                    <p>
+                        As I last said in the first Hackintosh log:
+                    </p>
+        <table class="hmcontainer" width="100%">
+        <tbody>
+        <tr>
+        <td class="hmcontainer2">
+"I was originally going to make a OpenCore EFI Folder. But when the installer of Mojave is finished, there was no option for "macOS Installer", which is needed to actually finish the installation.<br><br>
+I eventually gave up with it after tinkering and tweaking the EFI Folder to no avail, and <b>used a premade one on <a href="https://github.com/dps910/Dell-Optiplex-7010-Hackintosh-OpenCore">GitHub.                        <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></a></b>"
+        </td>
+        </tr>
+        </tbody>
+        </table>
+                    <p>
+                        Therefore i've always stayed with the EFI folder from GitHub. Untill I read a PSA regarding OpenCore 0.7.2, the version that I had trouble with.
+                    </p>
+        <table class="hmcontainer" width="100%">
+        <tbody>
+        <tr>
+        <td class="hmcontainer2">
+"In addition, the default Secure Boot model has been changed to x86legacy (from j137 - iMacPro1,1) which restricts boot to 11.0.1 and up.<br><br>
+Why do you care? Well, if you're using OC with SecureBootModel set to Default, you won't be able to boot High Sierra - Catalina anymore without changing the value. And if you don't have Big Sur or above installed on the <b>same disk</b>, you won't <b>even see APFS volumes in the boot picker</b>"
+        </td>
+        </tr>
+        </tbody>
+        </table>
+                    <p>
+                        After reading i've immediately started to create my own EFI folder. To fix the issue, I had to change <code>SecureBootModel</code> from <code>Default</code> to <code>j137</code>. After finishing editing config.plist,
+                        I booted into the USB with the EFI Folder and hoped it will boot into Catalina.
+                    </p>
+                    <p>
+                        And to my surprise, it did! I finally updated OpenCore to 0.7.2, including updating Kexts. After that I fixed <a href="https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management">Power Management                        <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></a> with <a href="https://github.com/Piker-Alpha/ssdtPRGen.sh">ssdtPRGen                        <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></a>, since i'm using a Ivy Bridge processor.
+                        </p>
+    <b>Installing Big Sur</b>
+                    <p>
+                        I decided to install Big Sur on my SSD along with Catalina. It went sucessful and without a notification on Catalina bugging me.
+                    </p>
+                    <div>
+                        <img src="/news/2021/big_sur-about-my-mac.png" width="420">
+                        <br>
+                        Unfortunately didn't screenshot me installing Big Sur, so here's About my Mac!
+                    </div>
+                    <p>
+                        Only thing that was annoying was that there was a "Update" drive on Catalina, but after some reading it's important for Big Sur, so I can't do anything with it :(.
+                    </p>
+    <b>Ironing even more issues</b>
+                    <p>
+                        Another issue I always had was a "EFI" entry on the Boot Picker, as mentioned in Log #1.
+                    </p>
+        <table class="hmcontainer" width="100%">
+        <tbody>
+        <tr>
+        <td class="hmcontainer2">
+                                "EFI" entry shows on Boot Picker despite there's nothing but the OC folder
+        </td>
+        </tr>
+        </tbody>
+        </table>
+                    <p>
+                        But was gone when I made a EFI folder from scratch, must be a issue with the one off of GitHub.
+                    </p>
+    <b>Drive icons on OpenCanopy</b>
+                    <p>
+                        I've also wanted to make OpenCanopy look more nice, by using custom drive icons for each macOS version that is shown in the picker.
+                    </p>
+                                        <p>
+                        After reading the OpenCore documentation, I figured out that you have to change <code>PickerAttribute</code> to <code>145</code> and put <code>&lt;flavor&gt;.icns</code> on the Resources folder. So, I did it. After getting the icons from <a href="https://dortania.github.io/OpenCore-Legacy-Patcher/">
+                        OpenCore legacy Patcher
+                        <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a>, I finally had drive icons that show the macOS logo for each version.
+                    </p>
+                                        <div>
+                        <img src="/news/2021/opencore-picker_s.png" width="">
+                        <br>
+                        My current OpenCore Boot Picker
+                    </div>
+<b>Final words</b>
+                    <p>
+                        Finally being able to fix some problems that always bugged me, and finally installing Big Sur was relieving. But that's all for this log, Log #4 will come soon... Bye!
+                    </p>
+</tr>
+</tbody>
+</table>
+<iframe class="footer2" src="../../quote.html" width="100%" height="50px" frameBorder="0">Couldn't load footer.</iframe><br>
+</center>
+</body>
+</html>

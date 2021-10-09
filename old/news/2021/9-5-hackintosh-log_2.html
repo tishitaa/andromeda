@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../styles/main.css">
+
+<!-- title and description -->
+<title> Hackintosh Log #2 - endromeda</title>
+
+<!-- structured data -->
+<body> <!-- blackstrip & banner image -->
+    <center>
+        <table class="banner" width="440">
+            <tbody>
+                <tr class="blackstrip" height="20">
+                    <td class="blackstrip">
+                        <a href="../../">Home</a>|<a href="../../about.html">About</a>|<a href="../../contact.html">Contact</a>|<a href="../../posts.html">Posts  </a>
+                    </td>
+            </tbody>
+        </table>
+    <img src="../../images/banner.gif">
+</center>
+
+
+<center> <!-- content/main container -->
+    <table class="hmcontainer" width="440">
+        <tbody>
+    <tr>
+<td class="hmcontainer2"><font size="+1">
+<b>endromeda</b></font><br>
+<b style="font-size:15px;">Hackintosh Log #2</b>
+<hr>
+                    <p>
+                        Hi again, this is the second log of my Hackintosh. This will be a shorter thread though, as I've done not a lot.
+                    </p>
+    <b>Triple-Booting</b>
+                    <p>
+                        I was thinking of installing Big Sur and Catalina to another drive, so I did. Everything was fine but, when you boot to Mojave you would get this pop-up.
+                    </p>
+<div>
+<img src="/news/2021/incompatible-disk.png">
+<br>
+Notification on Mojave after installing Catalina & Big Sur
+<br>
+</div>
+                    <p>
+                        Saddly, I had to erase Catalina and Big Sur to remove the issue.
+                    </p>
+    <b>Upgrading</b>
+                    <p>
+                        For a while I was thinking to upgrade Mojave to Catalina or Big Sur, as macOS Mojave was going to eventually lose support. And want to get features newer versions of macOS has.
+                    </p>
+                    <p>
+                        But was risky to do since it <i>*may*</i> break things on Mojave. But decided to take the risk with absolutely <b><i>NO</i></b> Time Machine backups or any backups.
+                    </p>
+                    <div>
+                        <img src="/news/2021/install-catalina.png" width="400">
+                        <br>
+                        Upgrading macOS Mojave to Catalina
+                    </div>
+                    <p>
+                        After staring at the progress bar for 30 minutes, the upgrade was successful. And even better, pretty much nothing broke from the upgrade.
+                        Which to my surprise it actually worked, after some time I was on the Setup Assistant. I completed the setup and was glad to see the macOS Mojave wallpaper and desktop.
+                    </p>
+                    <div>
+                        <img src="/news/2021/catalina-about-mac.png" width="420">
+                        <br>
+                        About my Mac, now with Catalina!
+                    </div>
+    <b>Fixing issues</b>
+                    <p>
+                        One of the issues i've had with OpenCore was getting an error every time at boot.
+        <table class="hmcontainer" width="100%">
+        <tbody>
+        <tr>
+        <td class="hmcontainer2">
+                                <code>00:000 00:000 OC: Failed to drop ACPI 54445353 0074734930757043 0 (1) - Not Found</code>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+                    <p>
+                        Which would have made <b>a LOT</b> of text files. But was able to fix it by disabling <code>Delete Cpu0Ist</code> and <code>Delete CpuPm</code>.
+                    </p>
+                    <p>
+                        Unfortunately, I'm still not able to get WIFI working with the card I'm using. Though, I might buy another card that will work with macOS.
+                    </p>
+                    <div>
+                        <img src="/news/2021/catalina-desktop.png" width="420">
+                        <br>
+                        Current macOS Catalina setup.
+                    </div>
+    <b>Closure</b>
+                    <p>
+                        So far, not lot has happened since the last Hackintosh log, though Ill try my best to make another log with more things I've done with the Hackintosh.
+                    </p>
+</tr>
+</tbody>
+</table>
+<iframe class="footer2" src="../../quote.html" width="100%" height="50px" frameBorder="0">Couldn't load footer.</iframe><br>
+</center>
+</body>
+</html>

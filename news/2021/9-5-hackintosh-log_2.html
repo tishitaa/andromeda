@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="/css/steamico.png">
+      <link rel="stylesheet" href="/css/blacksteam.css">
+      <!-- title and description -->
+      <title>Hackintosh Log #2 - Andromeda</title>
+      <!-- structured data -->
+      <main>
+         <script src="/assets/js/header.js"></script>
+         <div class="window no-resize" name="Andromeda">
+            <div class="box inset">
+               <h2>Hackintosh Log #2</h2>
+               <h5>September 5, 2021</h5>
+               <h5>Edited: September 29, 2021</h5>
+               <p>
+                  Hi again, this is the second log of my Hackintosh. This will be a shorter post though, as I've done not a lot.
+               </p>
+               <h3>Multi-Booting</h3>
+               <p>
+                  I was thinking of installing Big Sur and Catalina to another drive, to which I did. Everything was fine but, when you boot to Mojave you would get this pop-up.
+               </p>
+               <div>
+                  <img src="incompatible-disk.png">
+                  <br>
+                  Notification on Mojave after installing Catalina & Big Sur
+               </div>
+               <p>
+                  Saddly, I had to erase Catalina and Big Sur to erase the issue.
+               </p>
+               <h3>Upgrading</h3>
+               <p>
+                  For a while I was thinking to upgrade Mojave to Catalina or Big Sur, as I wanted to get features newer versions of macOS has.
+               </p>
+               <p>
+                  But thought it could be a grave mistake to do since it <i>*may*</i> break things on Mojave. But decided to take the risk with absolutely <b><i>NO</i></b> Time Machine backups or any backups.
+               </p>
+               <div>
+                  <img src="install-catalina.png" width="530">
+                  <br>
+                  Upgrading macOS Mojave to Catalina
+               </div>
+               <p>
+                  After staring at the progress bar for 30 minutes, I booted to Catalina with no issues. And even better, nothing broke from the upgrade.
+               </p>
+               <div>
+                  <img src="/news/2021/catalina-about-mac.png" width="530">
+                  <br>
+                  About my Mac, now with Catalina!
+               </div>
+               <h3>Fixing issues</h3>
+               <p>
+                  One of the issues i've had with OpenCore was getting an error every time at boot.
+               </p>
+               <div class="box rounded">
+                  00:000 00:000 OC: Failed to drop ACPI 54445353 0074734930757043 0 (1) - Not Found
+               </div>
+               <p>
+                  Which was a minor issue, but still wanted to remove it. Fortunately, I was able to fix it by disabling <code>Delete Cpu0Ist</code> and <code>Delete CpuPm</code> on <code>config.plist</code>.
+               </p>
+               <p>
+                  Unfortunately, I'm not able to get WI-FI working with the current card i'm using. Though, I could buy another card that will work with macOS.
+               </p>
+               <div>
+                  <img src="/news/2021/catalina-desktop.png" width="600">
+                  <br>
+                  Current macOS Catalina setup.
+               </div>
+               <h3>Closure</h3>
+               <p>
+                  So far, not lot has happened since the last Hackintosh log, though i'll try do my best to make another log with more stuff i've done with my Hackintosh.
+               </p>
+                  <div class="centered">
+                    <hr>
+                    <button id="comments-button" class="centered" style="font-family:Trebuchet MS">Load Telegram Comments</button>
+                    <script id="comments-script" src="/assets/js/comments.js"></script>
+                    <!-- <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="iXlXhFns" data-limit="5" data-dislikes="1" data-dark="1"></script> -->
+                  </div>
+            </div>
+            <div class="centered">
+               <h4>
+                  Andromeda (c) <script>document.write(new Date().getFullYear())</script>
+               </h4>
+            </div>
+         </div>
+         <div class="window no-resize headless centered">
+            <script src="/assets/js/footer.js"></script>
+         </div>
+      </main>
+</html>
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HERE COMES DA MONEY</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="base.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $( function() {
+      $( "#content" ).draggable({ handle: "h1.title" });
+  } );
+  </script>
+</head>
+<body>
+  <div class="menu-bar">
+    <div class="apple"></div>
+    <div class="menus">
+      <a>File</a>
+      <a>Edit</a>
+      <a>View</a>
+      <a>Special</a>
+      <a>Help</a>
+    </div>
+    <div>
+      <div class="finder">
+        <span id="clk" class="clk"></span>
+          <div class="grippie"></div>
+          <div class="finder-icon"></div>
+          <p>Finder</p>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="content">
+    <div class="control-box close-box"><a class="control-box-inner"></a></div>
+    <div class="control-box zoom-box"><div class="control-box-inner"><div class="zoom-box-inner"></div></div></div>
+    <div class="control-box windowshade-box"><div class="control-box-inner"><div class="windowshade-box-inner"></div></div></div>
+    <h1 class="title">Netscape</h1>
+    <div class="inner">
+      <div class="netscape">
+        <div class="throbber"></div>
+      </div>
+      <iframe src="https://endromeda.neocities.org/" width="100%" height="600" frameBorder="0">Browser not compatible.</iframe>
+    </div>
+ </div>
+</body>
+<script>
+function pad(num) {return ("0" + num).slice(-2);}
+function time1() {
+  var today = new Date(),
+    h = today.getHours(),
+    m = today.getMinutes(),
+    
+  h = h % 12;
+  h = h ? h : 12; // the hour '0' should be '12'
+  clk.innerHTML = h + ':' + 
+    pad(m) + ' ' + 
+    (h >= 12 ? 'PM' : 'AM');
+}
+window.onload = function() {
+  var clk = document.getElementById('clk');
+  t = setInterval(time1, 500);
+}
+</script>
+</html>
